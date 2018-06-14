@@ -1,0 +1,40 @@
+$color-1: #333;
+
+$color-1-light: #6f6f6f;
+
+$color-2: #777;
+
+$color-2-light: #9f9f9f;
+
+$color-3: #5b5b5b;
+
+$color-3-light: #c7c7c7;
+
+$color-4: #4a90e2;
+
+$color-4-light: #77abe9;
+
+$base-unit: 1rem;
+
+$body-font-size: $base-unit;
+$body-font-size2: $base-unit * 0.75;
+$body-color: $color-1;
+
+$base-font-family: 'Poppins', sans-serif;
+$body-line-height: 1.5;
+
+$h1-font-size: $base-unit * 2;
+$h2-font-size: $base-unit * 1.5;
+$h3-font-size: $base-unit * 1.25;
+
+$space: $base-unit * 2;
+
+$wrapper-max: $base-unit * 74;
+
+$br-mobile: 360px;
+$br-tablet: 768px;
+$br-desktop: 1200px;
+$br-desktop-xl: 1680px;
+
+$fw-normal: 400;
+$fw-bold: 700;

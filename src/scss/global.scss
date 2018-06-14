@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 12px;
+    @include min-media($br-mobile) {
+        font-size: 16px;
+    }
+    @include min-media ($br-desktop-xl) {
+        font-size: 20px;
+    }
+}
+
+body {
+    font-size: $body-font-size;
+    font-family: $base-font-family;
+    color: $body-color;
+    line-height: $body-line-height;  
+    letter-spacing: 1px;
+} 
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, .h1 {
+    font-size: $h1-font-size;
+    letter-spacing: 0;
+    margin-bottom: $space;
+}
+
+h2, .h2 {
+    font-size: $h2-font-size;
+    letter-spacing: 0;
+    margin-bottom: $space;
+}
+
+h3, .h3 {
+    font-size: $h3-font-size;
+    letter-spacing: 0;
+    margin-bottom: $space;
+}
+
+p {
+    margin: 0.5 * $space 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-right: $space;
+    padding-left: $space;
+    max-width: $wrapper-max;
+
+    @include min-media($br-tablet) {
+        padding-right: $space *2;
+        padding-left: $space *2;
+    }
+}
+
+.btn,
+.btn--ghost {
+    display: inline-block;
+    padding: $space/2 $space;
+    min-width: 190px;
+    font-size: $body-font-size2;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn {
+    background-color: $color-4;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: $color-4;
+        border: 1px solid $color-4; 
+    }
+}
+.btn--ghost {
+    background-color: white;
+    color: $color-4;
+    border: 1px solid $color-4;
+    &:hover {
+        background-color: $color-4;
+        color: white;
+    }
+}
+.component {
+    margin: $space 0;
+    @include min-media($br-tablet) {
+        margin-bottom: 2*$space;
+        margin-top: 2*$space;
+    }
+}
+
+%simple-text-shadow {
+    text-shadow: 1px 1px black;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

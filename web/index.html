@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<title></title>
+	
+	<link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <header class="main-hdr" data-js="header">
+    <div class="wrapper">
+        <a href="/" class="hdr-logo">
+            <img src="/img/wild-things60.png" srcset="/img/wild-things60.png 1x,/img/wild-things120.png 2x,/img/wild-things180.png 3x" alt="Wild Things"/>
+        </a>
+        <nav class="main-nav">
+            <button class="nav-btn" data-js="navbtn"><span></span></button>
+            <ul>
+                <li><a href="">Category 1</a></li>
+                <li><a href="">Category 2</a></li>
+                <li><a href="">Category 3</a></li>
+                <li><a href="">Category 4</a></li>
+                <li><a href="">Category 5</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        
+        <section class="component hero">
+    <div class="wrapper">
+        <div class="hero__cont hero_cont--text-shadow">
+            <h1>Hero baner poppins</h1>
+            <p>Tekst pod naglowkiem</p>
+            <a class="btn">Przejdz dalej</a>
+        </div>
+    </div>
+</section>
+        
+        <section class="boxes component">
+    <div class="wrapper">
+        <h2>Category 1</h2>
+        <div class="boxes__cont">
+            <div class="boxes__box boxes__box--kolo">
+                <div class="boxes__box__img">
+                    <img srcset="img/zebra240.jpg 240w, img/zebra384.jpg 384w, img/zebra480.jpg 480w" 
+                    sizes="(min-width: 1680px) 300px, (min-width: 1200px) 240px, (min-width: 768px) calc((100vw-12rem)/3), (min-width: 420px) calc(50vw-3rem), (min-width: 360px) calc(100vw-4rem), calc(100vw-48px)"
+                    src="/img/zebra240.jpg" alt="Zebra na sawannie"/>
+                </div>
+                <a href="#" class="h3 boxes__box__title">Lorem ipsum</a>
+                <p class="boxes__box__txt">Lorem ipsum dolor</p>
+            </div>
+            <div class="boxes__box">
+                <div class="boxes__box__img">
+                    <img src="/img/koliber240.jpg" alt="Koliber"/>
+                </div>
+                <a href="#" class="h3 boxes__box__title">Lorem ipsum</a>
+                <p class="boxes__box__txt">Lorem ipsum dolor</p>
+            </div>
+            <div class="boxes__box">
+                <div class="boxes__box__img">
+                    <img src="/img/tygrys240.jpg" alt="Tygrys"/>
+                </div>
+                <a href="#" class="h3 boxes__box__title">Lorem ipsum</a>
+                <p class="boxes__box__txt">Lorem ipsum dolor</p>
+            </div>
+            <div class="boxes__box">
+                <div class="boxes__box__img">
+                    <img src="/img/los240.jpg" alt="Łoś"/>
+                </div>
+                <a href="#" class="h3 boxes__box__title">Lorem ipsum</a>
+                <p class="boxes__box__txt">Lorem ipsum dolor</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="boxes component">
+    <div class="wrapper">
+        <h2>Category 2</h2>
+        <div class="boxes__cont boxes__cont--elastic">
+            <div class="boxes__box">
+                <div class="boxes__box__img">
+                    <img src="/img/flaming742.jpg" alt="Zebra na sawannie"/>
+                </div>
+                <a href="#" class="h3 boxes__box__title">Lorem ipsum</a>
+                <p class="boxes__box__txt">Lorem ipsum dolor</p>
+            </div>
+            <div class="boxes__box">
+                <div class="boxes__box__img">
+                    <img src="/img/flaming860-p.jpg" alt="Koliber"/>
+                </div>
+                <a href="#" class="h3 boxes__box__title">Lorem ipsum</a>
+                <p class="boxes__box__txt">Lorem ipsum dolor</p>
+            </div>
+    </div>
+</section>
+        
+        <section class="graphic component">
+    <div class="wrapper">
+        <h2>Grafika na całą szerokość</h2>
+    </div>
+    <figure class="graphic__cont">
+        <picture>
+            <source media="(orientation: portrait) and (max-width: 767px)" srcset="img/flaming860-p.jpg">
+            <source media= "(orientation: landscape) and (max-width: 767px)" srcset="img/flaming742.jpg">
+            <source media= "(min-width: 768px)" srcset="img/flaming1536.jpg">
+            <source media= "(min-width: 1680px)" srcset="img/flaming1920.jpg">
+            <img class="graphic__img" src="img/flaming742.jpg" alt="flaming"/>
+        </picture>
+        
+        <figcaption class="graphic__desc wrapper">
+            <h3 class="graphic__desc__title">Flaming</h3>
+            <p class="graphic__desc__txt">bdjwaifrhueivdhbjkjdoafjievhjlzjvi  kdijfls</p>
+        </figcaption>
+    </figure>
+</section>
+
+
+
+
+        <section class="video component" data-js="videoCont">
+    <div class="wrapper">
+        <div class="video__cont">
+            <video data-js="videoElem">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video__hdr">
+            <h2>Video title</h2>
+        </div>
+        <div class="video__controls">
+            <button class="video__controls__play" data-js="videoPlay">
+                <span class="fi flaticon-play-button"></span>
+            </button>
+            <button class="video__controls__pause" data-js="videoPause">
+                <span class="fi flaticon-pause"></span>
+            </button>
+        </div>
+        <div class="video__progress" data-js="videoProgr"></div>
+    </div>
+</section>
+
+        <section class="youtube component">
+    <div class="wrapper">
+        <div class="youtube__cont">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/6nqkze-4G6A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+        
+        <footer lcass="main-foot component">
+    <div class="wrapper">
+        <div class="main-foot__nav">
+            <div class="main-foot__nav__col">
+                <a href="#" class="main-foot__nav__cat">Category</a>
+                <ul>
+                    <li><a href="" class="main-foot__nav__lnk">Position 1</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 2</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 3 mfnfjsdbfjshdjahduwfhaknvdjxcxkd</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 4</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 5</a></li>
+                </ul>
+            </div>
+            <div class="main-foot__nav__col">
+                <p class="main-foot__nav__cat">Category</p>
+                <ul>
+                    <li><a href="" class="main-foot__nav__lnk">Position 1</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 2</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 3</a></li>
+                </ul>
+            </div>
+            <div class="main-foot__nav__col">
+                <a href="#" class="main-foot__nav__cat">Category</a>
+                <ul>
+                    <li><a href="" class="main-foot__nav__lnk">Position 1</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 2</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 3</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 4</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 5</a></li>
+                </ul>
+            </div>
+            <div class="main-foot__nav__col">
+                <a href="#" class="main-foot__nav__cat">Category</a>
+                <ul>
+                    <li><a href="" class="main-foot__nav__lnk">Position 1</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 2</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 3</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 4</a></li>
+                    <li><a href="" class="main-foot__nav__lnk">Position 5</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-foot__copy">
+            <small>Copy &copy; Wild Things</small>
+        </div>
+    </div>
+</footer>
+
+       
+
+
+
+       
+        
+        
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>

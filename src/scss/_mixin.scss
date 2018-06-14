@@ -1,0 +1,11 @@
+@mixin min-media($br) {
+    @media (min-width: $br) {
+        @content;
+    }
+}
+
+@mixin max-media($br) {
+    @media (max-width: $br) {
+        @content;
+    }
+}

@@ -1,0 +1,66 @@
+.hero {
+    position: relative;
+    margin-top: 0;
+    height: 36* $base-unit;
+    color: white;
+    background: url(../img/hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 450px;
+        @include min-media($br-tablet) {
+            background-image: url(../img/hero-tab.jpg);
+            height: 600px;
+        }
+        @include min-media($br-desktop) {
+            background-image: url(../img/hero-desk.jpg);
+            height: 600px;
+        }
+        @media (orientation: landscape) and (min-width: 1024px) {
+            height: 100vh;
+            background-size: cover;
+            min-height: 36* $base-unit;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: 
+            linear-gradient(to bottom, transparent 1px, black 1px, black 2px, transparent 2px), 
+            linear-gradient(to right, transparent 1px, black 1px, black 2px, transparent 2px);
+            background-size: 3px 3px;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            top: 40%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: 
+            linear-gradient(to bottom, transparent rgba(0,0,0,.4) 3*$space); 
+        }
+    .wrapper {
+        position: relative;
+        height: 100%;
+        z-index: 2;
+    }
+    &__cont {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); // div _cont bedzie przesuniety o 50% swojej wysokosci
+        &--text-shadow {
+            text-shadow: 1px 1px black;
+        }
+        @media (orientation: landscape) and (min-width: 1024px) {
+            bottom: 4 * $space;
+            transform: none;
+            top: auto;
+        }
+        @extend %simple-text-shadow;
+    }
+}

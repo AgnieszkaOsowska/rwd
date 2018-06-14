@@ -1,0 +1,40 @@
+.main-foot {
+
+    &__nav {
+        margin-left: -.5 * $space; 
+        margin-right: -.5 * $space; 
+       @extend .clearfix;
+
+        &__col { 
+            float: left;
+            padding-left: $space * .5;
+            padding-right: $space * .5;
+            margin-bottom: $space;
+            width: 50%;
+
+            &:nth-child(odd) {
+                clear: left;
+            }
+
+           @include min-media($br-desktop){
+                width: 25%;
+
+                &:nth-child(odd) {
+                    clear: none;
+                }
+           }
+        }
+        &__cat {
+          
+            margin-top: 0;
+            margin-bottom: $space *2;
+            color: $color-1;
+            font-weight: $fw-bold;
+        }
+    }
+    &__copy {
+        float: left;
+        margin-top: $space;
+        font-size: $body-font-size2;
+    }
+}

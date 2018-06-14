@@ -1,0 +1,116 @@
+.main-hdr {
+    position: absolute;
+    z-index: 20;
+    left: 0;
+    width: 100%;
+    height: $space * 2;
+    overflow: hidden;   // zakrywa cos co jest poza tym elementem
+    //background-color: $color-2-light;
+    color: #fff;
+
+    @include max-media($br-desktop - 1px) {
+        .nav-open &{
+            height: 100vh;
+            background-color: $color-2-light;
+        }
+    }
+    @include min-media($br-desktop) {
+        .wrapper{
+            position: relative;
+        }
+    }
+}   
+.hdr-logo {
+    position: absolute;
+    left: $space;
+    top: $space * 0.5;
+    width: 60px;
+
+    @include min-media($br-tablet) {
+        left: $space *2;
+    }
+}
+.main-nav {
+    margin-top: $space *2;
+    @extend %simple-text-shadow;
+
+    li {
+        border-top: 1px solid;
+        text-align: center;
+        padding: $space * 0.5 0;
+
+        &:first-child {
+            border-top: 0;
+        }
+    }
+
+    @include min-media($br-desktop) {
+        position: absolute;
+        top: 0;
+        right: $space *2;
+        margin-top: $space * 0.75; 
+        
+        li{
+            float: left;
+            margin-left: $space * 0.5;
+            padding: 0;
+            border: none;
+         }
+    }
+}
+.nav-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: $space;
+    width: $space * 2.5;
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -0.25 * $space;
+        display: block;
+        width: $space * 0.5;
+        height: $space * 0.5 * 0.125;
+        background-color: #fff;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            margin-left: -0.25 * $space;
+            width: $space * 0.5;
+            height: $space * 0.5 * 0.125;
+            background-color: #fff;
+        }
+        &:before {
+            margin-top: - 0.125 * $space;
+        }
+        &:after {
+            margin-top: 0.125 * $space;
+        }
+    }
+    @include min-media($br-desktop) {
+        display: none;
+    }
+}
+
+@include min-media($br-desktop) {
+    .main-hdr{
+        transition: font-size 5s, color 5s;
+    }
+    .compact{
+        position: fixed;
+        &.main-hdr{
+            font-size: 20px;
+            color: red;
+        }
+    } 
+   
+}
+
+
+
+
+

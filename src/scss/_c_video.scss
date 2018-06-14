@@ -1,0 +1,72 @@
+.video{
+    position: relative;
+
+    .wrapper{
+        padding-bottom: 55%;
+        height: 0;
+    }
+
+    &__cont{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        video{
+            height: 100%;
+        }
+    }
+
+    &__hdr{
+        position: absolute;
+        top: 15%;
+        color: #fff;
+        @extend %simple-text-shadow;
+    }
+
+    &__controls{
+        position: absolute;
+        bottom: 15%;
+        
+        .fi {
+            color: #fff;
+            @extend %simple-text-shadow;
+            font-size: 3rem;
+        }
+        &__play:hover .fi{
+            color: $color-4;
+        }
+
+
+        
+        &__pause{
+            display: none;
+            &:hover{
+                .fi{
+                    color: $color-4;
+                }
+            }
+        }
+    
+
+        @at-root .is-playing {
+            .video__controls__play{
+                display: none;
+            }
+            .video__controls__pause{
+                display: block;
+            }
+        }
+    }
+    &__progress{
+        height: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        background-color: $color-4;
+    }
+}

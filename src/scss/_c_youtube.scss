@@ -1,0 +1,25 @@
+.youtube{
+    position: relative;
+  
+   
+    .wrapper{
+
+    }
+
+    &__cont{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        margin: 0 auto;
+        max-width: 800px;
+       
+
+        iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+        }
+    
+    }
+}
